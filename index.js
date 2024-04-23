@@ -1,4 +1,3 @@
-// 1. Navigate to my ‘code’ folder
 require('dotenv').config()
 const express = require('express')
 const app = express()
@@ -14,6 +13,7 @@ app.get('*', (req, res) => {
 })
 
 app.listen(process.env.PORT)
+
 
 
 // 2. Make a new folder (named for the project)
