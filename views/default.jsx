@@ -19,12 +19,13 @@ function Def (html) {
                         <a href="/places">Places</a>
                     </li>
                     <li>
-                        <a href="/places/new">Add Place</a>
+                        <a href="/places/new">Add New Place</a>
                     </li>
                 </ul>
                 </nav>
                 {html.children}
             </body>
+            <footer className='footer'></footer>
         </html>
     )
 }
