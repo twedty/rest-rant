@@ -9,6 +9,8 @@ mongoose.connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
 })
 
+// module.exports.Place = require ('./places')
+
 const app = express()
 // Express Settings
 app.set('views', __dirname + '/views')
