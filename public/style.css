@@ -3,6 +3,17 @@ h1 {
     color: cornflowerblue;
 }
 
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+
 nav {
     background-color: cornflowerblue;
     padding: 10px;
@@ -28,13 +39,3 @@ nav a:hover {
     text-decoration: none;
 }
 
-body {
-    background-color: lightblue;
-    text-align: center;
-}
-
-main {
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: white;
-}
