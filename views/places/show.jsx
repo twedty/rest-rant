@@ -12,6 +12,7 @@ function show({ place }) {
             Not yet rated
         </h3>
         )
+//issue here
     if (data.place.comments.length) {
         let sumRatings = data.place.comments.reduce((tot, c) => {
             return tot + c.stars
@@ -26,7 +27,8 @@ function show({ place }) {
                 {stars} stars
             </h3>
         )
-    }      
+    }
+//issue ends here
     if (place.comments.length) {
         comments = place.comments.map(c => {
             return (
