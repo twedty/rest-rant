@@ -6,7 +6,7 @@ function edit_form ({place, id}) {
         <Def>
             <main>
                 <h1>Edit Place</h1>
-                <form method="POST" action={`/places/${data.place.id}?_method=PUT`} >
+                <form method="POST" action={`/places/${id}?_method=PUT`} >
                     <div className="row">
                         <div className="form-group col-sm-6">
                             <label htmlFor="name">Place Name</label>
@@ -14,39 +14,28 @@ function edit_form ({place, id}) {
                                 name="name"
                                 id="name"
                                 required
-                                defaultValue={place.name}/>
+                                defaultValue={place.name} />
                         </div>
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place City</label>
-                            <input type="text"
+                            <input id="city" type="text"
                                 name="city"
-                                id="city"
                                 required
                                 defaultValue={place.city} />
-                            </div>
-                        <div className="form-group col-sm-4">
-                            <label htmlFor="founded">Founded</label>
-                            <input className="form-control" 
-                            id="founded" 
-                            name="founded" 
-                            value={data.place.founded} 
-                            />
                         </div>
                     </div>
                     <div className="row">
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place State</label>
-                            <input type="text"
+                            <input id="state" type="text"
                                 name="state"
-                                id="state"
                                 required
                                 defaultValue={place.state} />
                         </div>
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place Picture</label>
-                            <input type="text"
+                            <input id="pic" type="text"
                                 name="pic"
-                                id="pic"
                                 required
                                 defaultValue={place.pic} />
                         </div>
@@ -54,14 +43,13 @@ function edit_form ({place, id}) {
                     <div className="row">
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place Cuisines</label>
-                            <input type="text"
+                            <input id="cuisines" type="text"
                                 name="cuisines"
-                                id="cuisines"
                                 required
                                 defaultValue={place.cuisines} />
                         </div>
                     </div>
-                    <input className="btn btn-primary" type="submit" value="Update Place" />
+                    <input type="submit"/>
                 </form>
             </main>
         </Def>
